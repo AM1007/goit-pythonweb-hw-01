@@ -55,6 +55,10 @@ The next step is to create vehicles considering the specifications of different 
 
 Code that enables creating vehicles for different regions easily using the respective factories.
 
+**Result:**
+
+![task_01](./screenshots/task_01.png)
+
 ---
 
 ### Task 2. SOLID Principles
@@ -160,3 +164,32 @@ Your task is to refactor the code to comply with the SOLID principles.
     if __name__ == "__main__":
         main()
 ```
+
+**Result:**
+
+#### What has been changed:
+
+1.  `Book` Class:
+
+    - A separate class has been created to represent a book.
+    - This class is responsible for storing the data of a single book, adhering to the **Single Responsibility Principle (SRP)**.
+
+2.  `LibraryInterface`:
+
+    - An interface has been defined with the methods `add_book`, `remove_book`, and `show_books`, allowing other classes to substitute `Library` in compliance with the **Liskov Substitution Principle (LSP)** and **Interface Segregation Principle (ISP)**.
+
+3.  `Library` Class:
+
+    - Implements the LibraryInterface.
+    - It is responsible only for storing and managing the collection of books.
+
+4.  LibraryManager Class:
+
+    - Handles user interactions with the library.
+    - Manages calls to the library's methods, ensuring adherence to the Dependency Inversion Principle (DIP).
+
+5.  Colored Output:
+
+    - The colorama library is used to improve visualization. Messages for success, errors, and other states are highlighted with colors.
+
+![task_02](./screenshots/task_02.png)
