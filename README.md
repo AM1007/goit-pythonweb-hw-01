@@ -1,4 +1,4 @@
-# SOLID Principles
+# Design Patterns & SOLID Principles
 
 ## Homework consists of two tasks.
 
@@ -180,16 +180,16 @@ Your task is to refactor the code to comply with the SOLID principles.
 
 3.  `Library` Class:
 
-    - Implements the LibraryInterface.
+    - Implements the `LibraryInterface`.
     - It is responsible only for storing and managing the collection of books.
 
-4.  LibraryManager Class:
+4.  `LibraryManager` Class:
 
     - Handles user interactions with the library.
-    - Manages calls to the library's methods, ensuring adherence to the Dependency Inversion Principle (DIP).
+    - Manages calls to the library's methods, ensuring adherence to the **Dependency Inversion Principle (DIP)**.
 
 5.  Colored Output:
 
-    - The colorama library is used to improve visualization. Messages for success, errors, and other states are highlighted with colors.
+    - The `colorama` library is used to improve visualization. Messages for success, errors, and other states are highlighted with colors.
 
 ![task_02](./screenshots/task_02.png)
